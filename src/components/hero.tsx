@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 export function Hero() {
   return (
@@ -30,12 +30,16 @@ export function Hero() {
           >
             <Link href="#">Learn more</Link>
           </Button>
+
           <Button
             size="lg"
             asChild
             className="h-12 cursor-pointer border-border text-base sm:h-14 sm:px-10"
           >
-            <Link href="/dashboard">Get started</Link>
+            <Link href="dashboard">
+              <SignedIn>Continue learning</SignedIn>
+              <SignedOut>Start learning</SignedOut>
+            </Link>
           </Button>
         </div>
       </div>

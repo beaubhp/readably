@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="container mt-10 flex flex-col items-center justify-between gap-6 pt-20 sm:flex-row">
+    <footer className="container mt-10 flex flex-col items-center justify-between gap-6 pb-4 pt-20 sm:flex-row">
       <p className="text-center text-sm">© 2024 Readably. All rights reserved.</p>
       <div className="flex items-center gap-5">
         <a href="#" className="text-muted-foreground hover:text-foreground">
