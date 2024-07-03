@@ -35,7 +35,7 @@ export function Hero() {
             asChild
             className="h-12 cursor-pointer border-border text-base sm:h-14 sm:px-10"
           >
-            <Link href="#">Get started</Link>
+            <Link href="/dashboard">Get started</Link>
           </Button>
         </div>
       </div>
